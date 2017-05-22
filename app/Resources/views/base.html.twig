@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">  <!-- it's important for d3.js -->
+        <script src="{{ asset("assets/vendor/angular/angular.js") }}"></script>
+        <script src="{{ asset("assets/vendor/d3/d3.js") }}"></script>
+        <script src="{{ asset("assets/vendor/nvd3/build/nv.d3.js") }}"></script> <!-- or use another assembly -->
+        <script src="{{ asset("assets/vendor/angular-nvd3/dist/angular-nvd3.js") }}"></script>
+        <link rel="stylesheet" href="{{ asset("assets/vendor/nvd3/build/nv.d3.css") }}">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+<body>
+{% block body %}{% endblock %}
+
+{% block javascripts %}{% endblock %}
+</body>
+</html>
