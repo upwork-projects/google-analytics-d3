@@ -8,12 +8,13 @@
                     <nvd3 options="options" data="data"></nvd3>
                 </div>
             </div>
-            {% for key,value in data %}
-                <pre>
-                    {{key}}: {{value}}
-                </pre>
-            {% endfor %}
-            {{dump(data)}}
+            <pre>
+                {% for key,value in data %}
+
+                    <span style="color:red">{{key}}</span>: {{value}}
+
+                {% endfor %}
+            </pre>
         </div>
     </div>
     <script>
